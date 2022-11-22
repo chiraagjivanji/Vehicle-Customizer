@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JDM Vehicle Customizer</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <script src="./JS/script.js" async defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html"><img class="home-button"
+                src="https://images.unsplash.com/photo-1620632523414-054c7bea12ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"></img></a>
+        <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Types</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Vouchers</a></li>
+        </ul>
+    </header>
+
+    <div class="slideshowBody">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="https://images.unsplash.com/photo-1558199099-ab7fa8a61cb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+                    alt="EVO X" style="width:100%">
+                <div class="text">EVO X</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="./Images/r34.jpg" alt="R34 GTR" width="100%" height="100%">
+                <div class=" text" style="width:100%">R34 GTR
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://images.unsplash.com/photo-1630858273073-ceef9c4d9504?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="GT-86" width="100%">
+                <div class="text">GT-86</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://images.unsplash.com/photo-1601942683467-990eb4b69224?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1150&q=80"
+                    alt="Silvias" style="width:100%">
+                <div class="text">SILVIAS</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="./Images/supra.jpg" alt="Supra" style="width:100%">
+                <div class="text">SUPRA</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <!-- The user input form -->
+    <div class="car-selection-form">
+        <form name="form" id="form">
+            <label>Vehicle Make:</label>
+            <select name="make" id="make">
+                <option value="makeOption" selected="selected" id="makeOption">Select Make</option>
+            </select>
+            <br><br>
+            <label>Vehicle Model:</label>
+            <select name="model" id="model">
+                <option value="" selected="selected">Please select Make first</option>
+            </select>
+            <br><br>
+            <label>Submodel:</label>
+            <select name="subModel" id="subModel">
+                <option value="" selected="selected">Please select Model first</option>
+            </select>
+            <br><br>
+            <input type="button" value="Search JDM Vehicle" id="submit" onClick="showImage()">
+        </form>
+    </div>
+    <!--div that holds the image of the selected car !-->
+    <p>Your car could look like this</p>
+    <div class="img-container" id="img-container"></div>
+    <!--div that holds the image of the customizations !-->
+    <div class=" img-customizations" id="img-customizations"></div>
+</body>
+<footer>
+</footer>
+
+</html>

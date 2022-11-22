@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    margin: 0px;
+    height: auto;
+    display: flex;
+    background-color: #101010;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 10px;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+/* Logo */
+.home-button {
+    width: 100px;
+    height: 100px;
+    display: block;
+    float: left;
+    margin-right: 500px;
+}
+
+/* SLIDESHOW CSS */
+
+/* body around the slideshow */
+.slideshowBody {
+    background-color: #101010;
+}
+
+.slideshow-container {
+    max-width: 850px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    /* increasing this will bring the right arrow to the left */
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* FORM CSS */
+
+.car-selection-form {
+    padding-top: 10px;
+}

@@ -1,0 +1,196 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #101010;
+}
+
+header {
+    margin: 0px;
+    height: auto;
+    display: flex;
+    background-color: #101010;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-right: 10%;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 10px;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+/* WebsiteLogo */
+.home-button {
+    width: 100px;
+    height: 100px;
+    display: block;
+    float: left;
+    margin-right: 500px;
+}
+
+/* SLIDESHOW CSS */
+/* body around the slideshow */
+.slideshowBody {
+    background-color: #101010;
+}
+
+.slideshow-container {
+    max-width: 850px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    /* increasing this will bring the right arrow to the left */
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text ~ description of the car */
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* FORM CSS */
+/* the entire form div */
+.car-selection-form {
+    padding-top: 10px;
+    width: 300px;
+    background: white;
+    margin: 40px auto;
+    text-align: left;
+    display: block;
+    color: black;
+    ;
+}
+
+/*Form options ~ make, model, submodel*/
+form {
+    position: relative;
+    width: 95%;
+    text-align: right;
+    padding-bottom: 25px;
+}
+
+label {
+    width: 50%;
+    position: absolute;
+    left: 2%;
+    text-align: left;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+}
+
+input[type=button] {
+    position: absolute;
+    left: 30%;
+    background-color: #cccccc;
+    top: 80%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#make,
+#model,
+#subModel {
+    cursor: pointer;
+}
+
+#make:hover,
+#model:hover,
+#subModel:hover {
+    background-color: #cccccc;
+}
+
+#submit:hover {
+    background-color: #7FFF00;
+    cursor: pointer;
+}
+
+/*IMAGE POPULATION CSS*/
+/*image container div ~ what holds the image when populated*/
+.img-container {
+    margin: auto;
+    width: 50%;
+    position: relative;
+}
+
+p {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+}
